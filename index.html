@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <main id="main">
+        <header>
+            <h1 id="title">Personal information survey</h1>
+            <p id="description">Please provide your personal information in this survey.</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+            <div class="form-div">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-input" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-div">  
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-input" id="email" name="email" placeholder="Enter your email" required>
+            </div> 
+            <div class="form-div">  
+                <label for="number" id="number-label">Age</label>
+                <input type="number" class="form-input" id="number" name="age" placeholder="Enter your current age" min="0" max="120">
+            </div>             
+            <div class="form-div">  
+                <label for="dropdown">Marital status</label>
+                <select name="marital-status" id="dropdown">
+                    <option value="Unmarried">Unmarried</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="None">Prefer not to say</option>
+                </select>
+            </div> 
+            <div id="radio">
+                    <p>Gender</p>
+                    <label id="male-label" for="male">
+                        <input type="radio" name="gender" id="male" value="male" checked>Male
+                    </label>
+                    <label id="female-label" for="female">
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </label>
+                    <label id="other-label" for="other">
+                        <input type="radio" name="gender" id="other" value="other">Other
+                    </label>
+            </div>
+            <div class="form-div">
+                <p>Allergies</p>
+                <label for="nuts">
+                    <input type="checkbox" name="allergies" id="nuts" value="nuts">Nuts
+                </label>
+                <label for="fish">
+                    <input type="checkbox" name="allergies" id="fish" value="fish">fish
+                </label>
+                <label for="gluten">
+                    <input type="checkbox" name="allergies" id="gluten" value="gluten">Gluten
+                </label>
+            </div>
+            <div class="form-div">
+                <p>Additional information</p>
+                <label for="Additional-information">
+                    <textarea id="Additional-information", name="info" rows="4" cols="40" placeholder="Enter additional personal information"></textarea>
+                </label>
+            </div>
+            <div class="form-div">
+                <input type="submit" id="submit" value="submit">
+            </div>
+        </form>
+    </main>
+  
+  
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
